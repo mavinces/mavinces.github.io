@@ -1,6 +1,20 @@
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+#loader {
+    border: 16px solid #f3f3f3; /* Borde gris */
+    border-top: 16px solid #3498db; /* Borde superior azul */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite; /* Animación de rotación */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
 /* Estilos generales */
 body {
     font-family: 'Open Sans', sans-serif;
