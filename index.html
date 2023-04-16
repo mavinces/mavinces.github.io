@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ing. Civil - Portafolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container-header">
+			<h1>M. Andres Vinces M.</h1>
+            <div class="informacion">
+			    <img src="FotoPerfil.jpg" alt="vincesmandres">
+			    <p>Ingeniero civil, docente auxiliar e investigador entusiasta.
+                    He colaborado en la gestión de proyectos institucionales
+                    e investigativos en materiales, geotecnia y evaluación
+                    estructural, durante los últimos 3 años. Autodidacta,
+                    apasionado por el estudio de modelos constitutivos y la
+                    implementación computacional. En mis tiempos libres soy
+                    tutor académico y programador.</p>
+            </div>
+			<nav>
+				<ul>
+                    <div class="a-buttons">
+					    <li><a href="#proyectos">Proyectos</a></li>
+					    <li><a href="#contacto">Contacto</a></li>
+                    </div>
+                    <div class="buttons">
+				        <a href="CV Maikel Andres Vinces Mendoza ESG.pdf" download>Descargar CV</a>
+			        </div>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<section id="proyectos">
+			<div class="container">
+				<h2>Proyectos</h2>
+				<ul>
+					<li>
+						<h3>Estudio geotécnico – vial para el proyecto PLAN MASA. Lodana, Santa Ana, 2021</h3>
+						<img src="p1.jpg" alt="Proyecto 1">
+						<a href="#">Leer más</a>
+					</li>
+					<li>
+						<h3>Evaluación estrctural del complejo Manta Boulevard, 2021.</h3>
+						<img src="p2.jpg" alt="Proyecto 2">
+						<a href="#">Leer más</a>
+					</li>
+					<li>
+						<h3>Evaluación estructural y patológica de los Puentes Quimis, Chone, Las Américas y
+                            Pichincha, 2021 - 2022</h3>
+						<img src="p3.jpg" alt="Proyecto 3">
+						<a href="#">Leer más</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="contacto">
+			<div class="container">
+				<h2>Contacto</h2>
+				<form action="enviar-correo.php" method="POST">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" required>
+					<label for="correo">Correo electrónico:</label>
+					<input type="email" id="correo" name="correo" required>
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" name="mensaje" required></textarea>
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
